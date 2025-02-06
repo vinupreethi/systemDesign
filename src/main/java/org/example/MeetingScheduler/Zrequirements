@@ -1,0 +1,41 @@
+1.Meeting scheduler, design a system any user can create a meeting
+and reserve a room for it
+2.Invitees availability (Required, optional)
+3. Multiple rooms are present
+4. Check the availability of the rooms  and schedule the meeting
+5. Standalone system
+
+Steps:
+1. Asking clarity of requirments and removing ambiguity,
+Check for ambiguity for edge cases, check the system requirements)
+2. Identify the actors and entities which the system must require
+3. Discussing the approach, how the entire flow looks like
+4. Writing the code
+5. Dry running the code
+6. Writing testcases to verify if the code is working fine
+
+
+Person -> has calendar(events),
+Room -> Has calendar ( List of meetings which are available), room id, room location, room capacity
+Calendar-> list of events with start and end time, Timezone in which the list of events is present
+Meeting -> meeting id, details, list of persons who are required and optional, meeting room, start and endtime of the meeting,
+        -> organizer of the meeting, status of the meeting (cancelled, scheduled, rescheduled)
+
+//1.Person can check the  list of available rooms based on the calendar(start and end time).
+//2.He can check the available time slots for the rooms and based on that also he can schedule the meeting
+
+3. (organizer) He can send invite to the list of persons who are required in the meeting.
+4. A person can reschedule or cancel the meeting.
+
+//top to down (Code from top to down)
+//Main schedulerService which contains the API -> room availability based on timeSlots, calls its method isAvailable
+//Create a meeting and add the meeting details to all the invitees
+//If the room is booked, throw an error
+
+//Follow up send a notification to invitees
+//Cancelling and rescheduling the meetings
+//Update the required calendar
+//Recurring meeting invites
+
+
+

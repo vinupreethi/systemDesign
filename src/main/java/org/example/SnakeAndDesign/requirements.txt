@@ -1,0 +1,23 @@
+*/
+/*
+Snake size should increase by one on eating the food.
+If the snake hits itself it should exit, the game should ended.
+Snake can move In all directions,
+Whereever the snake is present the food cannot be generated
+For every move, snake will be getting input.
+
+Entity and actors:
+Board,
+Cell,
+Snake,
+UserInput (direction) (user will make the move) ,
+System (can check if the  gameEnds, snakeSizeIncreases , (snake when reaches the end of board, comes from other side))
+
+system
+1. starting game,
+2.snake will be present in the game
+3.food will be generated in the board
+4.Based on the userinput snake will be moving on the direction which the user has suggested.
+5. For every move, based on the cellType in the board, System checks if the game has ended, or there is
+increase in the size of the snake, or the game can be continued
+ *//*
