@@ -47,4 +47,6 @@ public class Board {
     public void setPiece(int sourceRow, int sourceCol,Piece piece) {
          positions[sourceRow][sourceCol].setPiece(piece);
     }
+
+
 }
