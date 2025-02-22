@@ -59,8 +59,6 @@ public class SnakeGame {
             target.setRow(row);
             target.setColumn(column);
 
-            Position position = snake.getCells().getFirst().GetPosition();
-            position.setCell(new EmptyCell());
 
             if (checkIfFoodisEaten(target)) {
                 generateFood(board);
